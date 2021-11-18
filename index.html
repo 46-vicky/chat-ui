@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat UI</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+    <div class="flex h-screen w-full bg-gray-300 px-36 py-10">
+        <!--all user-->
+        <div class=" bg-blue-200 flex-col w-3/12">
+            <!--app title-->
+            <div class="text-xl p-3">
+                chats
+            </div>
+            <!--search bar-->
+            <div class="flex w-full p-2 bg-blue-200">
+                <div class="p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                      </svg>
+                </div>
+                <div class="w-full flex">
+                    <input type="text" class="flex-grow w-full focus:outline-none rounded-full" />
+                </div>
+            </div>
+            <div class="flex justify-around mt-2">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                      </svg>
+                    <span>
+                          Chat
+                      </span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    <span>
+                          Contact
+                      </span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                      </svg>
+                    <span>
+                          Notification
+                      </span>
+                </div>
+            </div>
+            <!--multi user area -->
+            <div class="flex-col p-4 mt-6">
+                <!--user1-->
+                <div class="flex  m-1 mb-5 bg-gray-200 p-2 rounded-full">
+                    <!--user1 profile-->
+                    <div class="w-1/5">
+                        <img class="w-14 h-14  " src="images/51f6fb256629fc755b8870c801092942.png">
+                    </div>
+                    <!--user1 name-->
+                    <div class="flex-col w-4/5 ml-2 mr-2 p-2">
+                        <div class="flex justify-between">
+                            <div class="text-black-600">vicky</div>
+                            <div class="text-gray-600 ">10.30</div>
+                        </div>
+                        <div>
+                            gchmmhgcmhdgmgc......
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="flex  m-1 mb-5 bg-gray-200  rounded-full">
+                    <!--user1 profile-->
+                    <div class="w-1/5">
+                        <img class="w-14 h-14  " src="images/51f6fb256629fc755b8870c801092942.png">
+                    </div>
+                    <!--user1 name-->
+                    <div class="flex-col w-4/5 ml-2 mr-2 p-2">
+                        <div class="flex justify-between">
+                            <div class="text-black-600">vel</div>
+                            <div class="text-gray-600">10.30</div>
+                        </div>
+                        <div>
+                            gchmmhgcmhdgmgc......
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="flex  m-1 mb-5 bg-gray-200  rounded-full">
+                    <!--user1 profile-->
+                    <div class="w-1/5">
+                        <img class="w-14 h-14  " src="images/51f6fb256629fc755b8870c801092942.png">
+                    </div>
+                    <!--user1 name-->
+                    <div class="flex-col w-4/5 ml-2 mr-2 p-2">
+                        <div class="flex justify-between">
+                            <div class="text-black-600">muruga</div>
+                            <div class="text-gray-600">10.30</div>
+                        </div>
+                        <div>
+                            gchmmhgcmhdgmgc......
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex  m-1 mb-5 bg-gray-200  rounded-full">
+                    <!--user1 profile-->
+                    <div class="w-1/5">
+                        <img class="w-14 h-14  " src="images/51f6fb256629fc755b8870c801092942.png">
+                    </div>
+                    <!--user1 name-->
+                    <div class="flex-col w-4/5 ml-2 mr-2 p-2">
+                        <div class="flex justify-between">
+                            <div class="text-black-600">psk</div>
+                            <div class="text-gray-600">10.30</div>
+                        </div>
+                        <div>
+                            gchmmhgcmhdgmgc......
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex  m-1 mb-5 bg-gray-200  rounded-full">
+                    <!--user1 profile-->
+                    <div class="w-1/5">
+                        <img class="w-14 h-14  " src="images/51f6fb256629fc755b8870c801092942.png">
+                    </div>
+                    <!--user1 name-->
+                    <div class="flex-col w-4/5 ml-2 mr-2 p-2">
+                        <div class="flex justify-between">
+                            <div class="text-black-600">vicky</div>
+                            <div class="text-gray-600">10.30</div>
+                        </div>
+                        <div>
+                            gchmmhgcmhdgmgc......
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--user specific chat-->
+        <div class="flex-grow h-full justify-between bg-white w-9/12">
+            <!--header start-->
+            <div class="flex bg-blue-200">
+                <div><img class="w-14 h-14 rounded-full" src="images/51f6fb256629fc755b8870c801092942.png">
+                </div>
+                <div class="flex justify-between w-full p-3 ">
+                    <div class="w-4/6">
+                        <span class="text-xl p-3 text-black-600">vicky</span>
+                    </div>
+
+
+                    <div class="flex justify-between w-1/6 mr-2">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" />
+                              </svg>
+                        </div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header end-->
+
+
+            <!--body chat-->
+            <div class="w-full  flex-grow">
+                <!--first person chat-->
+
+                <div class="flex-col w-3/6 bg-gray-300 m-8 p-3 rounded-tl-lg rounded-tr-lg rounded-br-lg">
+                    <div class="text-lg text-black">
+                        vicky
+                    </div>
+                    <div class="text-xs text-gray-800">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis impedit expedita tempore est eum facere culpa facilis odio architecto itaque!
+                    </div>
+                    <div class="text-sm text-gray-1000">
+                        5mins ago
+                    </div>
+                </div>
+                <!--second person chat-->
+                <div class="flex justify-end">
+                    <div class="flex-col justify-end w-3/6 bg-blue-300 m-8 p-3 rounded-tl-lg rounded-tr-lg rounded-bl-lg">
+                        <div class="text-lg text-black">
+                            vel
+                        </div>
+                        <div class="text-xs text-gray-800">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis impedit expedita odio architecto itaque!
+                        </div>
+                        <div class="text-sm text-gray-1000">
+                            3mins ago
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- body chat end-->
+
+            <!--text portion-->
+            <div class="w-full mt-40 flex bg-gray-300 ">
+                <input placeholder="Type your msg..." type="text" class="flex-grow w-full focus:outline-none" />
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
